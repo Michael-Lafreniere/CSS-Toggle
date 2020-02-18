@@ -17,8 +17,8 @@ You just need to download the toggle.css file and place it into your project fol
 <body>
   <label class="toggle-class">
     <input type="checkbox" name="" />
-    <span class="check"></span>
-    <span class="button"></span>
+    <span class="toggle-check"></span>
+    <span class="toggle-button"></span>
   </label>
 </body>
 ```

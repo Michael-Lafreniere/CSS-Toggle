@@ -37,7 +37,7 @@
   opacity: 0;
 }
 
-.toggle-class .check {
+.toggle-class .toggle-check {
   position: absolute;
   top: 0;
   left: 0;
@@ -50,7 +50,7 @@
 }
 
 /* Disabled indicator (left side): */
-.toggle-class .check:before {
+.toggle-class .toggle-check:before {
   content: '';
   position: absolute;
   top: var(--indicator-center);
@@ -67,13 +67,13 @@
     0 0 var(--toggle-height) var(--disabled-color);
 }
 
-.toggle-class input:checked ~ .check:before {
+.toggle-class input:checked ~ .toggle-check:before {
   background: var(--indicator-background);
   box-shadow: none;
 }
 
 /* Enabled indicator (right side) */
-.toggle-class .check:after {
+.toggle-class .toggle-check:after {
   content: '';
   position: absolute;
   top: var(--indicator-center);
@@ -86,7 +86,7 @@
   box-shadow: none;
 }
 
-.toggle-class input:checked ~ .check:after {
+.toggle-class input:checked ~ .toggle-check:after {
   background: var(--enable-color);
   box-shadow: 0 0 5px var(--enable-color),
     0 0 calc(var(--toggle-height) / 8) var(--enable-color),
@@ -96,7 +96,7 @@
 }
 
 /* Toggle button: */
-.toggle-class .button {
+.toggle-class .toggle-button {
   position: absolute;
   top: 0;
   left: 0;
@@ -109,7 +109,7 @@
     inset 0 20px 15px var(--button-border);
 }
 
-.toggle-class .button:before {
+.toggle-class .toggle-button:before {
   content: '';
   position: absolute;
   top: 0;
@@ -123,7 +123,7 @@
   filter: blur(2px);
 }
 
-.toggle-class .button:after {
+.toggle-class .toggle-button:after {
   content: '';
   position: absolute;
   top: 0;
@@ -137,6 +137,6 @@
   filter: blur(2px);
 }
 
-.toggle-class input:checked ~ .button {
+.toggle-class input:checked ~ .toggle-button {
   left: 50%;
 }
