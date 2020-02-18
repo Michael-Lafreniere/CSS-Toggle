@@ -1,14 +1,15 @@
 :root {
   /* Colors: */
-  --border-color: #aaaaaa;
-  --enable-color: #f00;
-  --disabled-color: #0f0;
+  --enable-color: #0f0;
+  --disabled-color: #f00;
+  --toggle-border-color: #aaa;
   --toggle-background: #101010;
+  --indicator-background: var(--toggle-background);
   --button-center-band: #333;
   --button-side-band: #252525;
   --button-border: #292929;
 
-  /* Sizes: */
+  /* Edit these values to your requirements: */
   --toogle-width: 150px;
   --transition-time: 0.25s;
 
@@ -45,7 +46,7 @@
   height: 100%;
   background: var(--toggle-background);
   border-radius: calc(var(--toogle-width) / 6);
-  box-shadow: 0 0 0 var(--border-thickness) var(--border-color);
+  box-shadow: 0 0 0 var(--border-thickness) var(--toggle-border-color);
 }
 
 /* Disabled indicator (left side): */
@@ -67,7 +68,7 @@
 }
 
 .toggle-class input:checked ~ .check:before {
-  background: var(--toggle-background);
+  background: var(--indicator-background);
   box-shadow: none;
 }
 
@@ -80,7 +81,7 @@
   width: var(--indicator-height);
   height: var(--indicator-height);
   border-radius: 50%;
-  background: var(--toggle-background);
+  background: var(--indicator-background);
   transition: var(--transition-time);
   box-shadow: none;
 }
