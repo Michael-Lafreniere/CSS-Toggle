@@ -2,7 +2,7 @@
 
 A simple css file to decorate check boxes, turning them into toggle like buttons. The majority of this code comes from this [YouTube](https://www.youtube.com/watch?v=bq1SpzD8X2s) video I seen by [Online Tutorials](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog) channel. I then extracted out the values and colors placing them into CSS variables. I then made all the ratios based off the controls width, which is the only value you really should need to edit outside of the colors and transition speed.
 
-![Toggle image](Toogle.png)
+![Toggle image](Toggle.png)
 
 ## Usage
 
